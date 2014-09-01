@@ -1,0 +1,30 @@
+{
+  "name": "gitbook-plugin-changyan",
+  "description": "gitbook plugin for changyan,a comment hosting service for online communities",
+  "main": "index.js",
+  "version": "1.0.0",
+  "engines": {
+    "gitbook": ">=1.0.0"
+  },
+  "homepage": "https://github.com/codepiano/gitbook-plugin-changyan",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codepiano/gitbook-plugin-changyan.git"
+  },
+  "license": "Apache 2",
+  "bugs": {
+    "url": "https://github.com/codepiano/gitbook-plugin-changyan/issues"
+  },
+  "keywords": [
+    "gitbook",
+    "changyan",
+    "plugin"
+  ],
+  "author": {
+    "name": "codepiano"
+  },
+  "readmeFilename": "README.md",
+  "_from": "git://github.com/codepiano/gitbook-plugin-changyan",
+  "_fromGithub": true,
+  "_id": "gitbook-plugin-changyan@1.4.0"
+}
