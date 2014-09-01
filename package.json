@@ -2,7 +2,7 @@
   "name": "gitbook-plugin-changyan",
   "description": "gitbook plugin for changyan,a comment hosting service for online communities",
   "main": "index.js",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "engines": {
     "gitbook": ">=1.0.0"
   },
@@ -26,5 +26,10 @@
   "readmeFilename": "README.md",
   "_from": "git://github.com/codepiano/gitbook-plugin-changyan",
   "_fromGithub": true,
-  "_id": "gitbook-plugin-changyan@1.4.0"
+  "_id": "gitbook-plugin-changyan@1.0.0",
+  "readme": "gitbook-plugin-duoshuo\n======================\n\nA comment hosting service for Web sites and online communities that uses a networked platform. \n\n畅言平台的gitbook插件，给gitbook集成评论功能\n\nhow to use\n----------\n\nAdd config in book.json, the config will be changyan object as a global variable.\n\n在book.json中添加设置，属性名为changyan\n\n```json\n{\n    \"plugins\": [\n        \"changyan\"\n    ],\n    \"pluginsConfig\": {\n        \"changyan\": {\n            \"appid\": \"your changyan's appid\",\n            \"conf\": \"the conf in the code generate by changyan\"\n        }\n    }\n}\n```\n\nhow to work\n-----------\n\nLoad comment elements when gitbook's page.change event triggered.\n\n由于gitbook特殊的页面加载方式，动态加载评论框的方法\n",
+  "dist": {
+    "shasum": "8fb151a9f7a0594db9e0b1070593c2fe58f45ebe"
+  },
+  "_resolved": "git://github.com/codepiano/gitbook-plugin-changyan#57af526f644bddcbbd58ddc130c3f85ebe55b63a"
 }
