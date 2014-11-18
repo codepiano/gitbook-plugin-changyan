@@ -1,9 +1,18 @@
-gitbook-plugin-duoshuo
+gitbook-plugin-changyan
 ======================
 
 A comment hosting service for Web sites and online communities that uses a networked platform. 
 
 畅言平台的gitbook插件，给gitbook集成评论功能
+
+how to install
+--------------
+
+安装到gitbook所在目录，不能作为全局模块安装
+
+```shell
+npm install gitbook-plugin-changyan
+```
 
 how to use
 ----------
