@@ -1,14 +1,14 @@
 gitbook-plugin-changyan
 ======================
 
-A comment hosting service for Web sites and online communities that uses a networked platform. 
+A comment hosting service for Web sites and online communities that uses a networked platform.
 
 畅言平台的gitbook插件，给gitbook集成评论功能
 
 how to install
 --------------
 
-安装到gitbook所在目录，如果build时提示无法找到插件，请将插件安装到gitbook模块所在的目录
+安装到gitbook所在目录，如果build时提示无法找到插件，可能是由于使用了nvm或n之类的模块所致，请将插件安装到gitbook模块所在的目录
 
 ```shell
 npm install gitbook-plugin-changyan -g
