@@ -8,10 +8,15 @@ A comment hosting service for Web sites and online communities that uses a netwo
 how to install
 --------------
 
-安装到gitbook所在目录，如果build时提示无法找到插件，可能是由于使用了nvm或n之类的模块所致，请将插件安装到gitbook模块所在的目录
+旧版本需要安装到gitbook所在目录，如果build时提示无法找到插件，可能是由于使用了nvm或n之类的模块所致，请将插件安装到gitbook模块所在的目录
 
 ```shell
 npm install gitbook-plugin-changyan -g
+```
+
+gitbook 3.0在book.json中添加完插件依赖以后可以直接运行下面的命令进行安装
+```
+gitbook install
 ```
 
 how to use
