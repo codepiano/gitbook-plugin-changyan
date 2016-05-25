@@ -6,9 +6,9 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
             sourceId = sourceId + 'index.html';
         }
         $(".book-body .page-inner").append('<div id="SOHUCS" sid="' + sourceId + '"></div>');
-        if (window.changyan) {
-            var appid = window.changyan.appid;
-            var conf = window.changyan.conf;
+        if (window.changyan && changyan.api && changyan.api.config) {
+            var appid = window.changyan.api.config.appid;
+            var conf = window.changyan.api.config.conf;
             var doc = document,
             s = doc.createElement('script'),h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
             s.type = 'text/javascript';
@@ -18,15 +18,16 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
         } else {
             console.log('无法获取畅言config');
         }
-    }
+    };
 
     gitbook.events.bind("start", function(e, config){
         document.location.protocol == 'https:' ? 'https:' : 'http:';
-        window.changyan = config.changyan;
+        window.changyan = {}, changyan.api = {};
+        window.changyan.api.config = config.changyan;
     });
 
     gitbook.events.bind("page.change", function(e){
-        loadChangyanDynamic()
+        loadChangyanDynamic();
     });
 
 });
