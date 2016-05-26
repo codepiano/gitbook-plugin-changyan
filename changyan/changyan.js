@@ -6,7 +6,8 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
             sourceId = sourceId + 'index.html';
         }
         $(".book-body .page-inner").append('<div id="SOHUCS" sid="' + sourceId + '"></div>');
-        if (window.changyan && changyan.api && changyan.api.config) {
+        if (window.changyan && window.changyan.api) {
+            window.changyan.api.config = window.gitbookChangyanConfig;
             var appid = window.changyan.api.config.appid;
             var conf = window.changyan.api.config.conf;
             var doc = document,
@@ -21,8 +22,9 @@ require(["gitbook", "jQuery"], function(gitbook, $) {
     };
 
     gitbook.events.bind("start", function(e, config){
-        document.location.protocol == 'https:' ? 'https:' : 'http:';
-        window.changyan = {}, changyan.api = {};
+        window.gitbookChangyanConfig = config.changyan;
+        window.changyan = {};
+        window.changyan.api = {};
         window.changyan.api.config = config.changyan;
     });
 
